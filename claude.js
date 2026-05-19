@@ -10,7 +10,7 @@ export default async function handler(req) {
     });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.CONTENT_STRATEGIST_API;
   if (!apiKey) {
     return new Response(JSON.stringify({ error: 'API key not configured on server' }), {
       status: 500,
