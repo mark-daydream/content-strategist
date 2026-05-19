@@ -1,0 +1,4 @@
+{
+  "buildCommand": "sed -i \"s/__CONTENT_STRATEGIST_API__/$CONTENT_STRATEGIST_API/g\" index.html",
+  "outputDirectory": "."
+}
