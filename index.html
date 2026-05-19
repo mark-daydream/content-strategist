@@ -1010,7 +1010,7 @@ OUTPUT: Return ONLY the complete HTML file starting with <!DOCTYPE html>. No exp
         'anthropic-dangerous-direct-browser-access': 'true',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-5',
         max_tokens: 8000,
         system: SYSTEM_PROMPT,
         messages: [{ role: 'user', content: draftPrompt }]
@@ -1152,7 +1152,7 @@ async function callClaudeStreaming(messages, bubble, useWebSearch, onComplete) {
   document.getElementById('send-btn').disabled = true;
 
   const body = {
-    model: 'claude-sonnet-4-20250514',
+    model: 'claude-sonnet-4-5',
     max_tokens: 4000,
     system: SYSTEM_PROMPT,
     stream: true,
