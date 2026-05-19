@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SEO Content Strategist</title>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
 /* ── DAYDREAM TOKENS ─────────────────────────────── */
 :root {
@@ -27,7 +27,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(--off-white); color: var(--near-black); overflow: hidden; }
+html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(--peach-lt); color: var(--near-black); overflow: hidden; }
 
 /* ── APP SHELL ───────────────────────────────────── */
 .app { display: flex; height: 100vh; width: 100vw; }
@@ -56,11 +56,13 @@ html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(-
 .sidebar-logo {
   padding: 0 28px 28px;
   border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  align-items: center;
 }
 .sidebar-logo-mark {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--off-white);
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -247,7 +249,7 @@ html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(-
 .input-bar {
   padding: 14px clamp(28px, 5vw, 64px) 22px;
   border-top: 1px solid var(--border);
-  background: var(--off-white);
+  background: var(--peach-lt);
   flex-shrink: 0;
 }
 .input-wrap { display: flex; gap: 10px; align-items: flex-end; max-width: 720px; }
@@ -316,20 +318,12 @@ html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(-
   text-align: center; padding: 48px 40px; gap: 28px;
 }
 .welcome-icon {
-  width: 80px; height: 80px; border-radius: 22px;
-  background: var(--near-black); display: flex; align-items: center; justify-content: center;
-  font-size: 36px; position: relative; overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-}
-.welcome-icon::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: var(--grad);
-  opacity: 0.15;
+  display: flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.1));
 }
 .welcome-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px; font-weight: 600; color: var(--near-black);
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px; font-weight: 800; color: var(--near-black);
   line-height: 1.18; letter-spacing: -0.02em;
 }
 .welcome-title span {
@@ -396,11 +390,9 @@ html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(-
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-logo">
-      <div class="sidebar-logo-wordmark">
-        <div class="sidebar-logo-mark">S</div>
-        <div class="sidebar-logo-name">SEO Strategist</div>
-      </div>
-      <div class="sidebar-logo-sub">Content · AI · Growth</div>
+      <svg width="160" height="36" viewBox="88 10 218 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M134.442 17.6299C134.442 17.6299 109.233 56.2288 100.918 56.2288C92.6025 56.2288 103.412 32.488 116.352 32.488C128.541 32.488 100.989 56.2288 111.301 56.2288C117.374 56.2288 127.262 42.7195 127.262 42.7195M149.55 32.2661C149.55 32.2661 133.081 56.2301 125.984 56.2301C118.886 56.2301 128.398 32.4891 142.35 32.4891C152.714 32.4891 127.545 56.2301 136.083 56.2301C141.436 56.2301 151.7 42.7208 151.7 42.7208M160.136 32.2661C160.136 32.2661 139.267 56.2301 146.304 56.2301C150.288 56.2301 157.042 49.4545 162.143 42.7208L170.072 32.2661L151.922 56.2301C151.922 56.2301 137.724 75.704 133.162 75.704C127.558 75.704 133.607 62.3942 148.228 58.5812C156.637 56.3901 168.74 52.5956 174.493 42.7208M207.39 17.6299C207.39 17.6299 182.181 56.2288 173.866 56.2288C165.551 56.2288 176.36 32.488 189.3 32.488C201.489 32.488 173.937 56.2288 184.249 56.2288C190.322 56.2288 200.21 42.7195 200.21 42.7195M200.2 42.7225C200.2 42.7225 207.747 32.4909 207.747 29.1739M206.103 33.6375C206.913 33.6375 211.511 31.8636 214.378 32.6324C219.438 34.2017 196.974 50.9465 201.054 55.7907C203.865 59.0657 216.443 42.7198 216.443 42.7198M217.034 41.8784C224.357 46.1533 237.986 32.2661 230.6 32.2661C220.01 32.2661 205.418 56.2301 217.032 56.2301C225.362 56.2301 234.791 42.7208 234.791 42.7208M257.061 32.2661C257.061 32.2661 240.592 56.2301 233.494 56.2301C226.397 56.2301 235.909 32.4891 249.86 32.4891C260.225 32.4891 235.056 56.2301 243.594 56.2301C248.948 56.2301 259.211 42.7208 259.211 42.7208M259.229 42.7235C259.229 42.7235 266.862 32.2661 269.982 32.2661C273.104 32.2661 270.742 38.3201 268.302 41.9651M268.302 41.9651L258.909 56.2274M268.302 41.9651C271.336 37.3387 276.239 32.2661 279.576 32.2661C282.55 32.2661 281.671 37.4357 278.499 42.2538M278.499 42.2538L269.181 56.2301M278.499 42.2538C282.11 36.7692 287.466 32.2661 291.196 32.2661C300.322 32.2661 275.662 56.2301 283.995 56.2301C287.436 56.2301 298.296 42.7208 298.296 42.7208" stroke="#FFFFFB" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </div>
 
     <div class="sidebar-steps" id="sidebar-steps">
@@ -423,10 +415,21 @@ html, body { height: 100%; font-family: 'Raleway', sans-serif; background: var(-
           <!-- Welcome screen -->
           <div class="welcome" id="welcome-screen">
             <div class="welcome-icon">
-              <span class="welcome-icon-inner">✦</span>
+              <svg width="72" height="72" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="78" height="78" rx="9" fill="url(#paint0_linear_240_4074)"/>
+                <rect x="1" y="1" width="78" height="78" rx="9" stroke="#232323" stroke-width="2"/>
+                <path d="M57.875 20.0347C57.875 20.0347 34.659 55.5902 27.0008 55.5902C19.3426 55.5902 29.2975 33.7213 41.2151 33.7213C52.4402 33.7213 27.0666 55.5902 36.5631 55.5902C42.1563 55.5902 51.2626 43.146 51.2626 43.146" stroke="#232323" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="paint0_linear_240_4074" x1="0" y1="40" x2="80" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#C3F2D0"/>
+                    <stop offset="0.53" stop-color="#B3EAFF"/>
+                    <stop offset="1" stop-color="#FEE3CC"/>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div class="welcome-overline">AI-Powered Content Strategy</div>
-            <div class="welcome-title">SEO Content<br><span class="grad-text">Strategist</span></div>
+            <div class="welcome-title">SEO Content<br>Strategist</div>
             <div class="welcome-sub">On-page optimizations and net new content built to rank in search and get cited by AI.</div>
             <div class="welcome-cards">
               <div class="welcome-card" onclick="startWorkflow('optimization')">
@@ -1005,8 +1008,9 @@ OUTPUT: Return ONLY the complete HTML file starting with <!DOCTYPE html>. No exp
       })
     });
 
-    const data = await response.json();
-    if (data.error) throw new Error(data.error.message);
+    let data;
+    try { data = await response.json(); } catch { throw new Error('Invalid response from API. Check your Vercel environment variable ANTHROPIC_API_KEY.'); }
+    if (data.error) throw new Error(data.error.message || 'API error — check your ANTHROPIC_API_KEY in Vercel settings.');
 
     let html = data.content[0].text;
     // Strip any markdown fences if present
@@ -1161,9 +1165,13 @@ async function callClaudeStreaming(messages, bubble, useWebSearch, onComplete) {
     });
 
     if (!response.ok) {
-      const err = await response.json();
+      let errMsg = 'API call failed. Please check your Anthropic API key is set correctly in Vercel.';
+      try {
+        const err = await response.json();
+        errMsg = err.error?.message || errMsg;
+      } catch {}
       bubble.classList.remove('stream-cursor');
-      bubble.innerHTML = formatMarkdown(`Error: ${err.error?.message || 'API call failed. Check your API key.'}`);
+      bubble.innerHTML = formatMarkdown(`There was an error: ${errMsg}`);
       state.isStreaming = false;
       document.getElementById('send-btn').disabled = false;
       return;
